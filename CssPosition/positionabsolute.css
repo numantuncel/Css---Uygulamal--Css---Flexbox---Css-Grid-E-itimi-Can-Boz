@@ -1,0 +1,39 @@
+.box {
+    background-color: pink;
+    text-decoration: none;
+    color: black;
+    padding: 15px 30px;
+    margin: 100px auto;
+    border-radius: 30px;
+    position: relative;
+    border-radius: 20px solid white;
+    font-weight: 600;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    /* body nin içindeki verileri ortaya yerleştirmek için kullanılır*/
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+
+}
+
+.box .basket {
+    background-color: green;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+
+}
+
+
+/* absolute: Öğenin,
+en yakın konumlandırılmış (position: relative, position: absolute veya position: fixed) ata öğesine göre konumlandırılmasını sağlar. Eğer böyle bir ata öğe yoksa,
+belge gövdesine (body) göre konumlandırılır. */

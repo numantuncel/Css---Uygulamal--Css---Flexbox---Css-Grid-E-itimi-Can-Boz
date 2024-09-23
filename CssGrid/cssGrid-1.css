@@ -1,0 +1,17 @@
+.container{
+    height: 700px;
+    width: 700px;
+    margin: 200px auto;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    /*içerdeki box ları tüm containere eşit sığdırır*/
+    grid-template-columns: 1fr 1fr; /*one furuction*//* px ya da % lik olarak da verilebilir*/
+    /* ikili kolon yapısına böler yani 50% 50% de kaplar toplamda 2fr 100% de olur*/
+
+}
+.box{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

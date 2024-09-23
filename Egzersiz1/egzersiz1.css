@@ -1,0 +1,40 @@
+body {
+  background-color: pink;
+  color: blueviolet;
+}
+.container {
+  background-color: white;
+  width: 500px;
+  border-radius: 30px;
+  margin: 100px auto;
+  padding: 40px;
+}
+.container h2{
+    text-transform: uppercase;/*hepsi büyük harf karakter*/
+    font-weight:bolder;
+    font-size: 25px;
+    margin-bottom: 0px;
+
+}
+
+.container h1{
+    margin-top: 0px;
+    font-weight: 100;
+}
+.container p{
+    font-size: 20px;
+}
+.container button{
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 20px 30px;
+    font-weight: 600;
+    border: none;/*border uçar*/
+
+}
+
+.container button:hover{
+    background-color: brown;
+}

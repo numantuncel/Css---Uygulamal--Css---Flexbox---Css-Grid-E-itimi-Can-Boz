@@ -1,0 +1,40 @@
+/* *{
+    /* color: aqua;
+    margin: 0;
+    padding: 0; */
+/*} */
+/* p{
+color: red;
+} */
+
+/* atribute slector */
+/* input[type="text"]{
+border: 1px solid rgb(0, 0, 0);
+} */
+
+input[type="number"]{
+    border: 1px solid rgb(17, 0, 255);
+    }
+    
+input[type="checkbox"]{
+    margin-right: 5px;
+    }
+
+/* Group ing selector  id seçicileri için de geçerli*/
+h1,h2,h3{
+color: cadetblue;
+}
+
+
+/* child combinator*/
+/* ul > li{ /** ul nin içindeki bütün li lere */
+/* color: red; */
+/* border: 1px solid red; */
+/* } */ 
+
+/* ol sıralı ul sırasız*/
+
+ul span{
+color: rgb(255, 0, 0);
+}
+/*ul nin içindeki span fakat ul değil unutma*/

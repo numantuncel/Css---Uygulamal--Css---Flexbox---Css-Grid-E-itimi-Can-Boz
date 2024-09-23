@@ -1,0 +1,12 @@
+body {
+    background-color: red;
+}
+
+@media screen and (min-width: 768px) {/*min width = o sayıya düşesiye kadar ,max widht o sayıya yükeslesiye kadar */
+    body {
+        background-color: blue;
+        /*max width = 768 den  sonra buraya ,aşağı mavi olur max width im 768 olasıya kadar mavi ol başlangıçdan */
+        /*min width 768 önce buraya gir minimum with im 768 olasıya kadar mavi ol*/
+    }
+
+}

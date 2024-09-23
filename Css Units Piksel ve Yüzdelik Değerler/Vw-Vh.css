@@ -1,0 +1,23 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    
+
+}
+
+/* viportwidth=Vw tüm genişliği kaplar  100vh komple height i kaplar 
+width he 100% dersek kaplamaya devam eder fakat height e 100% dersek height body nin ne kadar yer kapladığını bilmediği için çalışmaz ama body ye 600 e 600 bir
+değer verirsek heigt 600 kadar çalışır .
+
+body ye 100% dersek sadece içerdeki dive verilen height e göre bir height değerli alır 
+
+bu üzden de body de vh dememiz lazım
+*/

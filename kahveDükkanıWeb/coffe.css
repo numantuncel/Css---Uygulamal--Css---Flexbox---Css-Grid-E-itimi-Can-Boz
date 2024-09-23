@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBtn {
+    position: fixed;
+    top: 5%;
+    left: 3%;
+    color: #402a23;
+    z-index: 1;
+    font-size: 40px;
+    cursor: pointer;
+    animation: hamburger 2s infinite;
+}
+
+@keyframes hamburger {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.navbarHeader {
+    text-align: right;
+
+    padding-right: 16px;
+    padding-top:5px ;
+}
+
+.navClose {
+    color: #402a23;
+    font-size: 30px;
+    cursor: pointer;
+ 
+}
+.navBar {
+    position: fixed;
+    z-index: 2;
+    width: 25vw;
+    background-color: antiquewhite;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateX(-100%);
+    transition: all 0.2s linear;
+}
+
+.showNavBar {
+    transform: translate(0);
+    /*başlangç pozisyonuna gelir*/
+}
+
+.navLink {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 15px 30px;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    color: #402a23;
+    display: block;
+    /*block
+    Öğe, normal akıştayken hem öğeden önce hem de sonra satır sonları oluşturan bir blok kutusu oluşturur.*/
+    transition: all 0.1s linear;
+    position: relative;
+}
+.navLink i{
+    position: absolute;
+    right: 50px;
+}
+
+.navLink:hover {
+    background: #402a23;
+    color: white;
+    border-left: 10px solid white;
+    padding-left: 24px;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    background-image: url('main.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*width ve height değerinin % 50 si kadar.*/
+    text-align: center;
+}
+
+.banner h2 {
+    color: #402a23;
+    margin-bottom: 27px;
+    animation: slideFromRight 4s linear;
+    font-size: 25px;
+}
+
+.banner .bannerBtn {
+    text-decoration: none;
+    background: #402a23;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    /*harf arası boşluk*/
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+    animation: Show 4s linear;
+}
+
+.banner .bannerBtn:hover {
+    background-color: #a55233;
+    color: rgb(255, 255, 255);
+
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes Show {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(2);
+        opacity: 0.5;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+.divider {
+    background-color: #402a23;
+    height: 10px;
+}
+
+.features {
+    display: flex;
+
+}
+
+.feature {
+    padding: 40px 0px;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+.featureİcon {
+    font-size: 40px;
+    color: #a55233;
+
+}
+
+.featureText {
+    padding: 30px;
+}
+
+.feature:hover {
+    background-color: darkorange;
+
+}
+
+.aboutdiv {
+    display: flex;
+    justify-content: space-around;
+    background-color: #a55233;
+    padding: 50px 10px;
+}
+
+.aboutimg {
+    width: 50%;
+}
+
+.aboutInfo {
+    width: 40%;
+}
+
+.pictureDiv {
+    width: 100%;
+    overflow: hidden;/*taşmaları kapat*/
+    border: 5px solid burlywood;
+    border-radius: 30px;
+
+}
+
+.aboutPicture {
+    display: block;
+    transition: all 0.3s linear;
+    
+}
+/* Boşlukların Kaldırılması:
+
+inline öğeler, çevresinde küçük boşluklara neden olabilir. 
+display: block ile bu boşluklar kaldırılır ve resim tam olarak genişlik ve yükseklik ayarlarına uyar.
+Görünüm ve Düzen:
+
+block öğeler, her zaman bir satırda yer alır ve genişlik/yükseklik ayarları üzerinde tam kontrole sahipsinizdir. */
+
+.aboutPicture:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+.aboutInfo .title h3{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.aboutInfo .title{
+    color:wheat;
+}
+
+.btnDiv {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    background: burlywood;
+    color: white;
+    padding: 13px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    /*harf arası boşluk*/
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    color: brown;
+    background-color: wheat;
+}
+
+.productsDiv {
+    display: flex;
+    background-color: antiquewhite;
+    padding: 50px 40px;
+}
+
+.productContainer {
+    display: flex;
+    width: 70%;
+}
+
+.product {
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.productsInfo {
+    width: 30%;
+}
+
+.productİmg {
+    border-radius: 20px;
+    margin-bottom: 32px;
+}
+
+.productPrice {
+    color: green;
+}
+
+.servicesDiv {
+    background-color: azure;
+}
+
+.servicesTitle {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.ourServices {
+    display: flex;
+}
+
+.serviceKart {
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.2s linear;
+
+}
+
+.serviceKart:hover {
+    transform: scale(1.02);
+}
+
+.serviceİmg {
+    border-radius: 20px 20px 0px 0px;
+    /*sol üst, sağ üst, sol alt ,sağ al*/
+}
+
+.serviceİnfo {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.serviceBtn {
+    font-size: 12px;
+    padding: 8px 10px;
+    font-weight: 400;
+}
+
+.contactDiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactForm {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    min-width: 40%;
+
+}
+
+.formControl {
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.formControl::placeholder {
+    letter-spacing: 2px;
+}
+
+.formGroup {
+    padding: 16px 20px;
+}
+
+.submitButon {
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
+
+.contactDiv {
+    padding: 50px 20px;
+    background-color: ghostwhite;
+}
+
+.contactForm {
+    background-color: white;
+}
+
+.contactItem {
+    margin-bottom: 30px;
+}
+
+.contactTitle {
+    color: #a55233;
+    font-weight: 400;
+}
+
+.contactText {
+    text-transform: uppercase;
+}
+
+.contactInfo {
+    padding-top: 50px;
+}
+
+.footerDiv {
+    padding: 50px 20px;
+    background-color: #402a23;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialIcon {
+    color: bisque;
+    font-size: 27px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all 0.3 linear;
+}
+
+.socialIcon:hover {
+    color: white;
+
+
+}
+
+.socialIcon i:hover {
+    transform: scale(1.05);
+}
+
+.footerText {
+    color: bisque;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footerText span {
+    margin-right: 10px;
+}
+
+.coffe {
+    margin-left: 15px;
+
+}
+
+@media screen and (max-width:768px) {
+    .navBtn {
+        display: none;
+    }
+
+    .navBar {
+        width: 100%;
+        /*başlangıçda -100% dediğimiz için ortana kayboldu*/
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .aboutdiv {
+        flex-direction: column;
+    }
+
+    .aboutInfo {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .aboutimg {
+        width: 100%;
+    }
+
+    .productsInfo {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .productİmg {
+        margin: 0;
+    }
+
+    .productsDiv {
+        flex-direction: column;
+    }
+
+    .productContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .product {
+        margin-bottom: 5px;
+
+        margin-bottom: 30px;
+    }
+
+    .ourServices {
+        flex-direction: column;
+    }
+
+    .contactDiv {
+        flex-direction: column;
+    }
+
+    .contactInfo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footerDiv {
+        flex-direction: column;
+    }
+
+    .footerText {
+        margin-top: 20px;
+        font-size: 8px;
+    }
+
+    .coffe {
+        font-size: 18px;
+
+    }
+
+    .btnDiv {
+        text-align: center;
+    }
+
+}

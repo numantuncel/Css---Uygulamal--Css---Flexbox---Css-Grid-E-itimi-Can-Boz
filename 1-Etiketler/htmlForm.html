@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- HTML form etiketi, web sayfalarında kullanıcıdan bilgi girişi almak için kullanılan bir HTML öğesidir. 
+        Bir form, kullanıcıya metin girişi, düğmeler, onay kutuları, 
+        radyo düğmeleri ve diğer giriş araçları gibi çeşitli öğelerle etkileşimde bulunma imkanı sunar.  -->
+        <!-- inputlarda name yide değiştirmek lazım -->
+    <form>
+        <label >Ad:</label>
+        <input type="text" placeholder="ad" name="ad" value="Numan">
+
+        <br>
+            <label >Tel</label>
+            <input type="number" placeholder="ad" name="number" value="Tunçel">
+            <label >Mail:</label>
+            <input type="email" placeholder="ad" name="email" value="Tunçel">
+            <!-- submit buton gibidir -->
+            <input type="submit" value="Gönder">
+            <label >Tarih:</label>
+            <input type="date" placeholder="ad" name="date" value="Tunçel">
+    </form>
+    <form>
+        <input type="radio" name="gender" value="Erkek">
+        <label>Erkek</label>
+        <input type="radio" name="gender" value="Kadın">
+        <label>Kadın</label>
+    </form>
+    <form>
+        <input type="checkbox" name="gender" value="Erkek">
+        <label>Erkek</label>
+        <input type="checkbox" name="gender" value="Kadın">
+        <label>Kadın</label>
+    </form>
+</body>
+</html>

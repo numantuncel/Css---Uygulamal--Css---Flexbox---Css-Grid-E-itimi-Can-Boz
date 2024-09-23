@@ -1,0 +1,19 @@
+
+.box1{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    position: relative;
+    left: 200px;
+}
+.box2{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: -50px;
+
+
+    /*absolutla iç dive göre konumluyor */
+}

@@ -1,0 +1,97 @@
+body {
+  font-family: "Poppins", sans-serif;
+
+  margin: 0px;
+  
+}
+header{
+margin: 32px 0px 32px 100px;
+}
+
+.links {
+  display: inline-block;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: 300;
+}
+
+.links li {
+  display: inline-block;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 8px;
+  color: black;
+}
+
+a.active:hover {
+  border-bottom: 2px solid black;
+}
+
+.gallery {
+  padding: 15px;
+
+}
+.card{
+  display: inline-block;
+  width: 49%;
+  padding: 16px;
+  box-sizing: border-box;/*kutu boyutu kenarlık kadar yani 16px %49 un içinde kalıyor */
+}
+
+.card img {
+  height: 500px; /* Resmin yüksekliğini ayarlayın */
+  width: 100%; /* Resmin genişliğini ayarlayın */
+  object-fit: cover; /* Resmin boyutunu koruyarak kesmesini sağlayın */
+}
+
+.card img:hover {
+  opacity: 0.9;
+}
+.card h2{
+  margin: 8px 0px 16px 0px;
+  font-weight: 400;
+
+}
+.Açıklama{
+  width: 50%;
+  margin: 100px 200px;
+
+  font-style: italic;
+}
+span{
+  font-weight: 600;
+
+}
+footer{
+ 
+  text-align: center;
+}
+footer h4{
+  display: inline-block;
+  margin:40px;
+  border-bottom: 2px solid black;
+  font-style: italic;
+}
+
+.Açıklama .yazı{
+  margin: 20px;
+  display: inline-block;
+  font-size: 60px;
+  font-weight: 300;
+  border-bottom: 2px solid black;
+  color: red;
+
+}
+.bilgi{
+  margin: 40px;
+  
+}
+.bilgi p{
+  margin: 1px;
+
+}

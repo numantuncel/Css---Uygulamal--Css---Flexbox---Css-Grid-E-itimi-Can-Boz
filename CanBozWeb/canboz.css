@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.nav {
+    background-color: dimgray;
+    height: 75px;
+    padding-left: 20px;
+}
+
+.navLogo{
+    height: 100%;
+}
+.banner{
+    background-color: floralwhite;
+    padding: 50px 0px;
+}
+.bannerDiv{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.bannerİnfo .name{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.Title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.bannerİmg,.aboutİmg{
+    width: 30%;
+    border: 4px solid darkmagenta;
+    border-radius: 30px;
+}
+.bannerFoto,.aboutFoto{
+    width: 100%;
+}
+.underLine{
+    width: 80px;
+    height: 4px;
+    background-color: darkmagenta;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.name{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.students{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.manCourses{
+    font-size: 20px;
+    
+}
+.bannerİnfo span{
+    color: darkmagenta;
+}
+.btn{
+    text-decoration: none;
+    background-color: darkmagenta;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.2s linear;
+    
+}
+.btn:hover{
+    background-color: orange;
+}
+.aboutDiv{
+    display: flex;
+    justify-content: space-around;
+}
+.aboutİmg{
+    width: 30%;
+    
+}
+.aboutİnfo{
+    width: 40%;
+}
+.aboutSection{
+    padding: 100px 40px;
+    background-color: azure;
+}
+.aboutName{
+    font-size: 50px;
+}
+.aboutİnfo p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.aboutTitle{
+    margin-bottom: 30px;
+}
+.courseSection{
+    background-color: ghostwhite;
+    padding: 100px 40px;
+}
+.courseName{
+    font-size: 50px;
+}
+.courseKupon span{
+    font-size: 40px;
+    color: darkmagenta;
+}
+.courseTitle{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.courseTitle .underLine{
+    margin: auto;
+}
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.course{
+    width: 400px;
+    margin: 40px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+   
+}
+.course img{
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+.courseİnfo{
+    text-align: center;
+    padding: 16px 24px;
+}
+.prices{
+    color: brown;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+.socialİcons{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.socialİcon{
+    color: white;
+    font-size: 30px;
+    margin: 0px 15px;
+    
+
+}
+.footer p{
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px){
+    .bannerİmg{
+        display: none;
+
+    }
+    .aboutİmg{
+        display: none;
+    }
+    .banner{
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .underLine{
+        margin: 20px auto 20px auto;
+    }
+    .aboutTitle{
+        text-align: center;
+    }
+    .aboutİnfo{
+        width: 100%;
+    }
+    .course{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .footer{
+        padding: 100px 0px;
+    }
+
+}

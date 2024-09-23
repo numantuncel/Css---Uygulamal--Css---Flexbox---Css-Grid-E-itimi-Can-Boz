@@ -1,0 +1,36 @@
+h1{
+font-size: 100px;/*yazı boyutu*/
+font-weight: normal;/*bold,bolder gibi daha bir çok özellik var */
+font-style: italic;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: center;
+}
+a{
+    color: red;
+}
+
+
+
+/*rgb(red,green,blue)
+
+Bu bir renk karışımıdır hangi rengi daha çok verirsek o daha baskı hissedilir rgb özelliğidir
+*/
+
+body{
+/* background-color: rgb( 253, 0, 0); */
+color:rgb(0, 0, 0); 
+}
+
+div{
+/* color: rgb(55, 253, 0); */
+/* background-color: #51b01a; */
+border:5px solid rgb(255, 255, 255);
+
+}
+p{
+    border: inherit;/*Kapsayıcaki borderi kabul eder */
+    font-size: larger;
+/* opacity: 20%; */
+text-align:center ;/*bulunduğum divin içindeki yazıyı ortalamak istediğimde*/
+}
+

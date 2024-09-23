@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+    <div class="header" id="headerDiv">
+
+        <div class="mobilIcon" onclick="toggle()">
+            <img src="icon.jpg" alt="" width="50px" height="50px" >
+        </div>
+        <div>
+            <img src="1.jpg" alt="" width="32px" height="32px" class="headerİmg">
+        </div>
+        <div class="mobilLinkDisplay" id="navDiv">
+            <div class="mobilLink">
+                <a href="" class="headerLink">Home</a>
+                <a href="" class="headerLink">About</a>
+                <a href="" class="headerLink">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="bannerDiv">
+        <div class="banner">
+            <h1>Efsane Benner</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorem ipsam delectus asperiores
+                tempore debitis deserunt, perspiciatis temporibus repudiandae sequi mollitia pariatur vitae fugit rem
+                doloribus facere. Impedit, in saepe?</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgDiv">
+            <img src="1.jpg" alt="" class="efso">
+            <h3>Efsane Resim</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita error distinctio nulla recusandae,
+                asperiores tempora optio nam, consequuntur, accusamus omnis rerum! Explicabo labore facilis officiis sit
+                consequatur tenetur voluptatum soluta!</p>
+        </div>
+
+        <div class="imgDiv">
+            <img src="2.jpg" alt="" class="efso">
+            <h3>Efsane Resim</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita error distinctio nulla recusandae,
+                asperiores tempora optio nam, consequuntur, accusamus omnis rerum! Explicabo labore facilis officiis sit
+                consequatur tenetur voluptatum soluta!</p>
+        </div>
+        <div class="imgDiv">
+            <img src="3.jpg" alt="" class="efso">
+            <h3>Efsane Resim</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita error distinctio nulla recusandae,
+                asperiores tempora optio nam, consequuntur, accusamus omnis rerum! Explicabo labore facilis officiis sit
+                consequatur tenetur voluptatum soluta!</p>
+        </div>
+        <div class="imgDiv">
+            <img src="4.jpg" alt="" class="efso">
+            <h3>Efsane Resim</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita error distinctio nulla recusandae,
+                asperiores tempora optio nam, consequuntur, accusamus omnis rerum! Explicabo labore facilis officiis sit
+                consequatur tenetur voluptatum soluta!</p>
+        </div>
+    </div>
+    <form class="form">
+        <label>Ad</label>
+        <input type="text" name="firstname" placeholder="Ad" class="formElement">
+        <label>Soyad</label>
+        <input type="text" name="lastname" placeholder="Soyad"  class="formElement">
+        <label>Ülke</label>
+
+        <select name="country"  class="formElement">
+            <option value="tr">Türkiye</option>
+            <option value="az">Azerbaycan</option>
+            <option value="en">İngiltere</option>
+        </select>
+
+        <input type="submit" value="Kaydet" class="btnSubmit">
+    </form>
+    <div class="footer">
+        <h3>Frontend && Tüm Hakları Saklıdır.</h3>
+    </div>
+    <script>
+        function toggle() {
+            let x = document.getElementById("navDiv");
+            let y = document.getElementById("headerDiv");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.height = "auto";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

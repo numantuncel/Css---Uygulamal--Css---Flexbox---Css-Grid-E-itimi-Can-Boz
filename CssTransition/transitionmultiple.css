@@ -1,0 +1,15 @@
+.btn {
+    border: 4px solid red;
+    padding: 10px 20px;
+    margin-top: 50px;
+    display: block;   /*aşağı almak için satır durumunu iptal ettik*/
+    width: 50px;
+    /*transition: color 2s ,background-color 2s; /*bunu hovere verirsek sadece üstüne gelince değişir*/
+   transition: all 2s; /*bütün geçişler 2 saniye*/
+   text-decoration: none;
+   }
+   .btn:hover{
+        border: 4px solid pink;
+       background-color: blue;
+       color: white;
+   }

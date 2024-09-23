@@ -1,0 +1,15 @@
+.container{
+    height: 700px;
+    width: 700px;
+    margin: 200px auto;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+   /* grid-template-columns:1fr  1fr 1fr 1fr; *//* Bu yazım tarzı yerine */
+   grid-template-columns:fit-content(300px) fit-content(500px) fit-content(300px);
+}
+.box{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

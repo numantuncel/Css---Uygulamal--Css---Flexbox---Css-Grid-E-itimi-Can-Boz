@@ -1,0 +1,16 @@
+/*CSS transition, bir HTML öğesinin stil özelliklerinde değişiklik yaparken yumuşak ve animasyon benzeri bir etki oluşturmanıza olanak tanır. 
+Bu, stil özelliklerinin ani değişimler yerine belirli bir süre boyunca kademeli olarak değişmesini sağlar. */
+
+.btn {
+ border: 1px solid red;
+ padding: 10px 20px;
+ margin-top: 50px;
+ display: block;   /*aşağı almak için satır durumunu iptal ettik*/
+ width: 50px;
+ transition: background-color 2s; /*bunu hovere verirsek sadece üstüne gelince değişir*/
+
+}
+.btn:hover{
+    background-color: blue;
+    color: white;
+}

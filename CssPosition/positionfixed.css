@@ -1,0 +1,20 @@
+.title{
+    background-color: rgb(255, 196, 0);
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    padding: 30px;
+    font-weight: 900;
+}
+
+/*navbarlarda üstte kalmasını sağlar sayfa aşağıda indirilse o hep üstte sabit kalır */
+
+#Sticky{
+    background-color: aqua;
+    position: sticky;/*sıra bu yazıya geldiğinde üste 0 dayar ve orda kalır ama tekrar aşağı indirilirse iner */
+    top: 0;/*üste 0 anlamında*/
+
+}

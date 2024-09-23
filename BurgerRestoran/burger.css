@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: wheat;
+    height: 80px;
+    padding: 0px 15px;
+}
+.bannerDiv {
+    background-image: url('restoran-1024x559.jpg');
+    background-size: cover;
+    height: 641px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.headerLink {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+.banner {
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+}
+.banner h1{
+    color: white;
+}
+.banner p{
+    color: white;
+    font-size: 18px;
+}
+.card {
+
+    display: flex;
+    margin:30px 0px;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+.imgResDiv{
+    flex: 25%;
+}
+.imgDiv {
+    /* width: 200px; */
+    border: 1px dashed black;
+    border-radius: 30px;
+   /*  margin-right: 50px; */
+    margin: 20px;
+   
+}
+.imgDiv img {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+.imgDiv .pricePurchaseDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgDiv .price{
+    font-size: 28px;
+    color: red;
+}
+.imgDiv .purchase{
+    padding: 15px 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: hsl(120, 100%, 29%);
+    color: white;
+    width: 100px;
+    cursor:pointer;
+    margin-bottom: 30px;
+}
+.imgDiv h3{
+    color: red;
+    text-align: center;
+    
+}
+
+.imgDiv .efso {
+    width: 100%;
+    /*fotoğraf dive sığar*/
+    border-radius: 30px 30px 0px 0px;
+}
+
+.imgDiv p {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+
+
+select option {
+    color: black;
+}
+
+
+
+
+.btnSubmit {
+    width: 100%;
+    padding: 13px 0px;
+    background-color: rgb(144, 238, 144);
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+.footer {
+    background-color: rgb(230, 95, 149);
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.footerList{
+    list-style-type: none;
+}
+.footerList a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.footerList li{
+    margin-top: 10px;
+}
+
+
+.mobilIcon {
+    display: none;
+}
+@media screen and (max-width:900px) {
+    .imgResDiv{
+        flex:50%;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .imgResDiv{
+        flex:100%;
+    }
+    .card {
+        flex-direction: column;
+
+    }
+
+    .card .imgDiv {
+       
+        margin-bottom: 30px;
+
+    }
+
+    .mobilLinkDisplay {
+        display: none;
+    }
+
+    .mobilLink {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .headerİmg {
+        display: none;
+    }
+
+    .mobilIcon {
+        display: block;
+    }
+    .footer{
+        flex-direction: column;
+        height: auto;
+    }
+    .footerList{
+        display: flex;
+        padding: 0px;/*footerlistin solundaki varsayılan boşluk*/
+    }
+    .footerList li{
+      
+        margin-right: 10px;
+    }
+}

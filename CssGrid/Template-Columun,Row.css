@@ -1,0 +1,20 @@
+.container{
+    height: 700px;
+    width: 700px;
+    margin: 200px auto;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    /*içerdeki box ları tüm containere eşit sığdırır*/
+    grid-template-columns:150px 1fr 150px; /*one furuction*//* px ya da % lik olarak da verilebilir*/
+    /* ikili kolon yapısına böler yani 50% 50% de kaplar toplamda 2fr 100% de olur*/
+    /*one fruction 100% kaplar içerisi büyüdükçe değişmez*/
+
+    grid-template-rows: 3fr 1fr 200px;
+    /*burası da row yani satı için x ekseni için işlem yapar */
+}
+.box{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

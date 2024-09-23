@@ -1,0 +1,184 @@
+body {
+    background-color: rgb(217, 147, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 32px;
+
+}
+
+.container {
+    background-color: white;
+    max-width: 1000px;
+    /*maximum olucak daha aşağısı için tarayıcı genişliği*/
+   
+    border-radius: 30px;
+    width: 100%;
+    /*max wirdth in 100% width ini kaplasın*/
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    /*sol ve sağ uzaklığı 1x aralar 2x olacak şekilde/ hepsinin sağına ve soluna 1 x boşluk  */
+    text-transform: uppercase;
+    color: blueviolet;
+    font-weight: bold;
+    width: 100%;
+}
+
+.tabs .active {
+    color: pink;
+    position: relative;
+
+}
+
+.tabs p:hover {
+    color: darkmagenta;
+    cursor: pointer;
+}
+
+
+.tabs .active::before {
+    content: '';
+    background-color: blueviolet;
+    width: 200%;
+    height: 4px;
+    position: absolute;
+    bottom: -7px;
+    left: -50%;
+    /*bulunduğu width den yani 200% den -50% de yani 200% nin yarısı kadar */
+    border-radius: 10px;
+}
+
+.line {
+    position: absolute;
+    max-width: 1000px;
+    height: 3px;
+    background-color: rgb(217, 147, 226);
+    width: 100%;
+    top: 120px;
+}
+
+.customers {
+    background-color: blueviolet;
+    width: 50%;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin: 32px 0px 16px 0px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-transform: uppercase;
+}
+
+.customers .number {
+    font-size: 54px;
+    margin: 0px;
+}
+
+.customers .title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 16px 0 8px 0;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.2s transform ease;
+  
+    
+}
+.card:hover{
+    transform: translateY(-8px);
+    
+}
+.card .title{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px;
+}
+.card .title p{
+    margin: 4px 0px;
+}
+
+.card .price{
+    font-size: 42px;
+}
+
+.card hr{
+    width: 30%;
+    border: 1px solid blueviolet;
+    border-radius: 2px;
+}
+.card button{
+    border: none;
+    padding: 16px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 8px 0;
+    transition: 0.2s transform ease;/*özellik hovere değil butona ait ama hoverde yazsam olur*/
+}
+.card button:hover{
+    transform: scale(1.1);/*1.= kendir büyüklüğü 1.1 de 1.10 gibi %10 büyümesi*/
+    cursor: pointer;
+}
+.profasional{
+    background-color: rgb(217, 147, 226);
+    color: white;
+    position: absolute;
+    top: -25px;
+    width: 100%;
+    left: 0px;
+    border-radius: 10px 10px 0 0 ;
+}
+
+@media screen and (max-width:1024px){
+    .tabs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .line{
+        display: none;/*ortadan kaldır*/
+    }
+    .customers{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        margin: 30px 0px; 
+        padding:0px;
+        
+    }
+    .cardContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card button{
+        margin: 15px;
+    }
+    
+}

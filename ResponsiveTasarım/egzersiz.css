@@ -1,0 +1,17 @@
+h1 {
+    font-size: 30px;
+}
+
+@media screen and (max-width:1192px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 12px;
+    }
+}
+
+/*min width ilede yapılır*/

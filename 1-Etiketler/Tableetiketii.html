@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th{
+        text-align: left;
+        border: 1px solid red;
+        }
+        table ,th,td{
+        border: 1px solid red;
+        }
+        td,th{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- başlık için th -->
+    <table style="width: 100%;"><tr>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Yaş</th>
+        <th>Meslek</th>
+    </tr>
+    <tr>
+        <td>Can</td>
+        <td>Boz</td>
+        <td>32</td>
+        <td>Mühendis</td>
+    </tr>
+    <tr>
+        <td>Numan</td>
+        <td>Boz</td>
+        <td>32</td>
+        <td>Öğrenci</td>
+    </tr>
+    </table>
+
+    <table style="width: 100%;"><tr>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Yaş</th>
+        <th>Meslek</th>
+    </tr>
+    <tr>
+        <td>Can</td>
+        <td>Boz</td>
+        <td>32</td>
+        <td>Mühendis</td>
+    </tr>
+    <tr>
+        <td>Numan</td>
+        <td>Boz</td>
+        <!-- 2 birim yer kapla veri yoksa  -->
+        <td colspan="2">32</td>
+        <td></td>
+    </tr>
+    </table>
+
+    <table style="width: 100%;"><tr>
+        <!-- Başlık vermek için -->
+        <caption> Öğrenci Listesi</caption>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Yaş</th>
+        <th>Meslek</th>
+    </tr>
+    <tr>
+        <td>Can</td>
+        <td>Boz</td>
+        <td>32</td>
+        <td>Mühendis</td>
+    </tr>
+    <tr>
+        <td>Numan</td>
+        <td >Boz</td>
+        <!-- 2 birim yer kapla veri yoksa colda yatayda   -->
+        <!-- 2 birim yer kapla veri yoksa row da  yatayda   -->
+
+        <td colspan="2">32</td>
+        <td></td>
+    </tr>
+    </table>
+</body>
+</html>

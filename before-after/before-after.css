@@ -1,0 +1,6 @@
+div::before{/*orjinal içerik kısmından önce */
+    content: "Before";
+}
+div::after{/*örjinal içerik kısmından sonra */
+    content: "After";
+}

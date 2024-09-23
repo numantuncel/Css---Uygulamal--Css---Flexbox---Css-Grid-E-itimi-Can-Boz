@@ -1,0 +1,60 @@
+.btn {
+  border: 4px solid red;
+  padding: 10px 20px;
+  margin-top: 50px;
+  display: block; /*aşağı almak için satır durumunu iptal ettik*/
+  width: 50px;
+  /*transition: color 2s ,background-color 2s; /*bunu hovere verirsek sadece üstüne gelince değişir*/
+  transition: all 2s ease-in-out; /*bütün geçişler 2 saniye defaul easy dir yani hızlanır sonra yavaşlar*/
+  text-decoration: none;
+}
+.btn:hover {
+  transform: translate(200px);
+}
+
+/*    ease
+Varsayılan değer olan ' ye eşit cubic-bezier(0.25, 0.1, 0.25, 1.0), geçişin ortasına doğru hız artar, sonunda yavaşlar.
+
+linear
+Eşittir cubic-bezier(0.0, 0.0, 1.0, 1.0), eşit hızda geçiş yapar.
+
+ease-in
+Eşittir cubic-bezier(0.42, 0, 1.0, 1.0), yavaş yavaş başlar ve geçiş hızı tamamlanana kadar artar.
+
+ease-out
+Eşittir cubic-bezier(0, 0, 0.58, 1.0), hızlı bir şekilde geçiş yapmaya başlar, geçiş devam ettikçe yavaşlar.
+
+ease-in-out
+Eşittir cubic-bezier(0.42, 0, 0.58, 1.0), geçiş yavaş yavaş başlar, hızlanır ve sonra tekrar yavaşlar.
+
+cubic-bezier(p1, p2, p3, p4)
+p1 ve p3 değerlerinin 0 ila 1 aralığında olması gereken, yazar tarafından tanımlanan kübik Bezier eğrisi. */
+
+/* transition delay = Erteleme */
+.btn1 {
+    text-align: center;
+    border: 4px solid rgb(17, 0, 255);
+    padding: 10px 20px;
+    margin-top: 50px;
+    display: block; /*aşağı almak için satır durumunu iptal ettik*/
+    width: 50px;
+    transition: color 2s ease-out 2s,background-color 2s ease-in; /*bunu hovere verirsek sadece üstüne gelince değişir
+    /*yukardakine de delay yani dilek denir */
+
+    /*transition: all 2s ease-in-out 1s; /*bütün geçişler 2 saniye defaul easy dir yani hızlanır sonra yavaşlar*/
+    
+    /*sonuna yazdığımız değer erteler bu  delay dır yani dilek  */
+    text-decoration: none;
+  }
+  .btn1:hover {
+    /* border: 4px solid red; */
+    background-color: blue;
+    color: white;
+   /*  transform: translate(200px); */
+  }
+
+
+ /*  CSS transition, CSS özelliklerinde yapılan değişikliklerin belirli bir süre boyunca kademeli olarak gerçekleşmesini sağlayan bir özelliktir.
+  Bu, web sayfalarında animasyon benzeri efektler oluşturmak için kullanılabilir.
+  
+  Transition, öğelerin görsel durumlarının aniden değil, yumuşak bir geçişle değişmesini sağlar. */

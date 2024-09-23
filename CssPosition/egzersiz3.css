@@ -1,0 +1,17 @@
+.nav{
+    background-color:blue;
+    position: fixed;
+    right: 0px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+}
+
+p{
+    padding-right:210px ;
+
+}
+button{
+    position: absolute;
+    right: 0;
+}

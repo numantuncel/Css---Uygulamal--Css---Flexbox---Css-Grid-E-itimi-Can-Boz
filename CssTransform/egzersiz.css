@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/*body i yükseklik olarak genişletmek için*/
+    /*height: 100vh özelliği, bir öğenin yüksekliğinin viewport yüksekliğinin (görünüm alanının) %100'ü kadar olmasını sağlar. vh, "viewport height" anlamına gelir ve 1vh, viewport yüksekliğinin %1'ine eşittir. 
+    100vh değeri ise tam olarak viewport yüksekliğine eşittir.*/
+    margin: 0px;/*scrol çıkmasın  diye*/
+    background-color: pink;
+}
+
+
+
+.btn{
+    margin: 0 20px;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 20px;
+    font-size:25px ;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.4s ease-in-out,box-shadow 0.4s;
+}
+
+
+/* display: flex, CSS Flexbox modülünün bir parçasıdır
+ ve bir konteyner içerisindeki öğelerin düzenlenmesini ve hizalanmasını daha esnek ve güçlü bir şekilde yönetmenizi sağlar. 
+Flexbox, özellikle karmaşık düzenlerde öğeleri kolayca hizalamak, dağıtmak ve düzenlemek için kullanılır. */
+
+.button1{
+    color: blue;
+
+}
+.button1:hover{
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.button2{
+    color: red;
+
+}
+.button2:hover{
+    transform: scale(0.8);/*normal değeri 40 50 iken 0. demeke küçültür*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}

@@ -1,0 +1,26 @@
+.container{
+    border: 4px solid black;
+    width: 70%;
+    height: 1000px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;/*x ekseninde, dikey eksende hizalar*/
+
+
+
+}
+.sidebar{
+    background-color: blueviolet;
+    flex-grow: 1;/*sonra bunu dersek h1 1 br sinden çekilmek zorunda kalır*/
+}
+h1{
+    text-align: center;font-size: 60px;
+}
+p{
+    flex-grow: 1;/*ilk başta bunu dersek 2 br lik boşluğu komple alır */
+    background-color: lightgreen;
+    margin: 0;
+    width: 600px;
+}
+/*birim yer kaplama */

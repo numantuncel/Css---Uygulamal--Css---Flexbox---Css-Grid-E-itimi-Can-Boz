@@ -1,0 +1,72 @@
+/*
+body{
+font-size: larger;
+
+}
+p{
+font-size: larger;
+letter-spacing: 5%;/*aralarındaki boşluğu açar harflerin*/
+/*/*word-spacing: 1%;/*kelime arası boşluk*/
+/*line-height: 5%;/*lineler yani satırlar arası boşluk*/
+/*}
+
+/* h1{
+font-size: 100px;
+} */
+
+/* 
+h1{
+    font-family: "Poetsen One", sans-serif
+} */
+
+/*Text transform özelliği metin dönüşümü anlamındadır yani bütün harfler büyük mü olsun sonra baş harfler mi büyük olsun hepsi küçük mü olsun gibi örnek ler verebiliriz */
+
+/* p{
+text-transform: uppercase;/*hepsi büyük*/
+/*text-decoration: underline dotted red;dekorasyon altı çizili ve özellikleri var dot gibi yani nokta ve renk verilebilir */
+
+/*}*/
+/* h1{
+
+text-transform: lowercase;/*hepsi küçük*/
+/*text-decoration-line: line-through;/*üstü çizili h1*/
+/*} */
+/* ul{
+
+text-transform: capitalize;/**sadece baş harfler büyük*/
+/*list-style-type: space-counter;
+text-shadow: 2px 2px 5px;/* gölge x de y de ve gölge bluru kalınlığı */
+
+/*} */
+
+/* a{
+text-decoration: none;/*altı çizgisi kalkar*/
+/*text-transform: capitalize;/*baş harfler büyük*/
+/*} */
+/* a:hover{
+color: yellow;
+font-size: larger;
+cursor: wait;
+} */
+
+body {
+    font-family: "Poetsen One";
+}
+div{
+    width: 50%;
+}
+h1{
+    font-size: 2em;
+    font-weight: 40px;
+    
+}
+h2{
+
+    font-size: larger;
+   
+}
+span{
+    text-shadow: 0 -5px green,0 -7.5px blue, 0 5px red,0 10px yellow;
+}
+
+

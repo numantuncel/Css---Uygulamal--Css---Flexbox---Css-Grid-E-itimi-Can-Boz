@@ -1,0 +1,30 @@
+h1{
+    font-size: 4rem;
+}
+
+
+/*her tarayıcı default olarak farklı font size kullanır mesela bizimkinin 16px h1 için bu yüzden 4rem 64px e denk gelir*/
+
+
+h2{
+    font-size: 2rem;/*32px*/
+}
+
+
+p{
+
+    font-size: 1rem; /*16 px p için varsayılaan*/
+}
+
+
+/*em  de ise kapsayıcıya göre değişir örnek dışardaki div 2rem se içersiine 2em dersek 4 reme denk gelir*/
+
+
+.container{
+    font-size: 25px;
+}
+.container h1,h2{
+    font-size: 2em;/* 50px olur*/
+
+
+}

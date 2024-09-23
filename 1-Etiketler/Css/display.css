@@ -1,0 +1,75 @@
+/* CSS'in "display" özelliği, bir HTML elementinin nasıl görüneceğini ve diğer elementlerle nasıl etkileşime gireceğini belirlemek için kullanılır. 
+Bu özellik, bir elemanın blok, satır içi, esnek kutu, ızgara veya hiçbir şekilde görünmemesi gibi farklı davranışlar sergilemesini sağlar.  */
+
+.inline {
+  display: inline;
+  background-color: yellow;
+  border: 1 px solid red;
+  width: 100px; /*inlinede geçemez fakat inline block kda geçer */
+  height: 100px;
+}
+.inlineblock {
+  display: inline-block;
+  background-color: yellow;
+  border: 1 px solid red;
+  width: 100px; /*inlinede geçemez fakat inline block kda geçer */
+  height: 100px;
+}
+.block {
+  display: block;
+  background-color: yellow;
+  border: 1 px solid red;
+  width: 100px; /*inlinede geçemez fakat inline block kda geçer */
+  height: 100px;
+}
+.none {
+  display: none;
+  background-color: yellow;
+  border: 1 px solid red;
+  width: 100px; /*inlinede geçemez fakat inline block kda geçer */
+  height: 100px;
+}
+/* displayın türkçesi görüntülemek demek */
+/* CSS'in "display" özelliği, bir HTML elementinin nasıl görüneceğini ve diğer elementlerle nasıl etkileşime gireceğini belirlemek için kullanılır. Bu özellik, bir elemanın blok, satır içi, esnek kutu, ızgara veya hiçbir şekilde görünmemesi gibi farklı davranışlar sergilemesini sağlar. "Display" özelliğinin yaygın kullanılan bazı değerleri ve açıklamaları şunlardır:
+
+1. **block**: Eleman bir blok seviyesi eleman gibi davranır. Yani, genişliği mümkün olan en geniş alanı kaplar ve ardından altındaki eleman yeni bir satırda başlar.
+    ```css
+    display: block;
+    ```
+
+2. **inline**: Eleman bir satır içi eleman gibi davranır. Yani, sadece içeriği kadar genişlik kaplar ve ardından gelen eleman aynı satırda devam eder.
+    ```css
+    display: inline;
+    ```
+
+3. **inline-block**: Eleman, genişliği ve yüksekliği ayarlanabilir, ancak yan yana diğer elemanlarla aynı satırda durur.
+    ```css
+    display: inline-block;
+    ```
+
+4. **none**: Eleman belge akışından çıkarılır ve sayfada görünmez hale gelir.
+    ```css
+    display: none;
+    ```
+
+5. **flex**: Eleman bir esnek kutu konteyneri olur ve içindeki elemanlar esnek kutu öğeleri haline gelir. Bu, modern düzen tasarımlarında yaygın olarak kullanılır.
+    ```css
+    display: flex;
+    ```
+
+6. **grid**: Eleman bir ızgara konteyneri olur ve içindeki elemanlar ızgara öğeleri haline gelir. Bu, karmaşık düzenler oluşturmak için güçlü bir araçtır.
+    ```css
+    display: grid;
+    ```
+
+7. **inline-flex**: Eleman, esnek kutu konteyneri olur ancak satır içi bir eleman gibi davranır.
+    ```css
+    display: inline-flex;
+    ```
+
+8. **inline-grid**: Eleman, ızgara konteyneri olur ancak satır içi bir eleman gibi davranır.
+    ```css
+    display: inline-grid;
+    ```
+
+Bu "display" değerleri, bir web sayfasının düzenini oluşturmak ve şekillendirmek için temel taşlar arasında yer alır. Elementlerin birbirleriyle olan ilişkisini kontrol etmek ve sayfanın görünümünü düzenlemek için kullanılırlar. */

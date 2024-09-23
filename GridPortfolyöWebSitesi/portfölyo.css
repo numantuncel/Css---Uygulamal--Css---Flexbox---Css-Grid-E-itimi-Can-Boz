@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    height: 90px;
+    display: grid;
+    align-items: center;
+}
+
+.navCenter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navLinks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-self: end;
+    /* yazılar en sağa*/
+    column-gap: 30px;
+}
+
+.navLogo {
+    width: 50px;
+}
+
+.navLinks a {
+    color: gray;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 18px;
+    transition: all 0.2s linear;
+}
+
+.navLinks a:hover {
+    color: darkmagenta;
+}
+
+.section {
+    padding: 100px 0px;
+
+}
+
+.banner {
+    background-color: ghostwhite;
+}
+
+.sectionCenter {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    /*ekran küçülse bile 100 de 100 kaplar*/
+}
+
+.bannerDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    /*aligin itmesi ve justfy itemsi içerir*/
+
+}
+
+.bannerFoto {
+    width: 400px;
+    border: 4px solid darkmagenta;
+    border-radius: 20px;
+}
+
+.can {
+    text-align-last: left;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.bannerInfo .underLine {
+    width: 90px;
+    height: 4px;
+    background-color: darkmagenta;
+    margin: 5px auto 20px 0px;
+    border-radius: 30px;
+}
+
+.bannerInfo h2 {
+    color: gray;
+}
+
+.btn {
+    color: brown;
+    background-color: white;
+    padding: 10px 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+    margin-top: 20px;
+    /*display inline olduğu için yemez*/
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: all 0.2s linear;
+
+}
+
+.btn:hover {
+    background-color: lightyellow;
+}
+
+.about {
+    background-color: azure;
+}
+
+.aboutCenter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.underLine {
+    width: 90px;
+    height: 4px;
+    background-color: darkmagenta;
+    margin: 5px auto 20px auto;
+    border-radius: 30px;
+}
+
+.aboutTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.aboutBtnDiv {
+    text-align: center;
+}
+
+.servicesSection {
+    background-color: antiquewhite;
+
+}
+
+.servicesTitle {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.service {
+    background-color: white;
+    padding: 50px 25px;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+}
+
+.service:hover {
+    background-color: darkmagenta;
+    color: white;
+}
+
+.service:hover .underLine {
+    background: white;
+}
+
+.serviceIcon {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.service h4 {
+    font-size: 20px;
+}
+
+.service .underLine {
+    width: 50px;
+    height: 5px;
+    transition: all 0.2s linear;
+}
+
+.projectsSection {
+    background-color: darkgrey;
+}
+
+.projectsTitle {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.projectText {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.projectImg {
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s linear;
+    border-radius: 8px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    grid-template-areas:
+        'a b b'
+        'a c d';
+}
+
+.project1 {
+    grid-area: a;
+}
+
+.project2 {
+    grid-area: b;
+}
+
+.project3 {
+    grid-area: c;
+}
+
+.project4 {
+    grid-area: d;
+}
+
+.project {
+    height: 100%;
+    position: relative;
+    background-color: darkmagenta;
+    border-radius: 8px;
+}
+
+.projectInfo {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.project:hover .projectInfo {
+    opacity: 1;
+}
+
+.project:hover .projectImg {
+    opacity: 0.1;
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid white;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.project:hover::before {
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+.skills {
+    background-color: aliceblue;
+}
+
+.skillTitle {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skillsCenter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.skillContainer {
+    position: relative;
+    width: 100%;
+    height: 16px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+.skillValue {
+    position: absolute;
+    background: darkmagenta;
+    height: 100%;
+
+    border-radius: 10px;
+
+}
+
+.value90 {
+    width: 90%;
+}
+
+.value95 {
+    width: 95%;
+}
+
+.value85 {
+    width: 85%;
+}
+
+.text90 {
+    left: 90%;
+}
+
+.text95 {
+    left: 95%;
+}
+
+.text85 {
+    left: 85%;
+}
+
+
+.skillText {
+    position: absolute;
+    color: black;
+    top: -32px;
+    transform: translateX(-50%);
+    color: brown;
+}
+
+.skill {
+    margin-top: 30px;
+}
+
+.skillsCenter h3 {
+    text-align: center;
+    font-size: 22px;
+    color: brown;
+    margin: 25px 0px;
+}
+
+.timelineCenter {
+    width: 70%;
+}
+
+.timelineTitle {
+    margin-bottom: 60px;
+}
+
+.timeline {
+    background-color: gainsboro;
+
+}
+
+.timelineItem {
+    border-top: 2px dashed darkmagenta;
+    padding: 60px 30px;
+    position: relative;
+}
+
+.timelineItem:nth-child(odd) {
+    /* eleman olarak tek olanlara */
+    border-right: 2px dashed darkmagenta;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 30px;
+}
+
+.timelineItem:nth-child(even) {
+    /* eleman olarak tek olanlara */
+    border-left: 2px dashed darkmagenta;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 30px;
+}
+
+.timelineItem:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+}
+
+.timelineItem:last-child {
+    border-bottom-left-radius: 0;
+}
+
+.timelineItem h4 {
+    font-size: 20px;
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    color: brown;
+    font-weight: bold;
+    transform: translate(50%, -50%);
+}
+
+.timelineItem:nth-child(odd) .number {
+    right: 0;
+}
+
+.timelineItem:nth-child(even) .number {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.card img {
+    height: 200px;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.blogTitle {
+    margin-bottom: 60px;
+}
+
+.blog {
+    background-color: floralwhite;
+}
+
+.blogCenter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    height: 450px;
+    border-radius: 30px;
+}
+
+.cardInfo {
+    text-align: center;
+    padding: 10px 20px;
+
+}
+
+.cardInfo h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.cardFooter {
+    text-align: center;
+
+}
+
+.cardFooter .btn {
+    margin-top: 10px;
+
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding-bottom: 30px;
+    display: grid;
+    place-items: center;
+}
+
+.footer p {
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.socialIcons a {
+    color: white;
+    font-size: 24px;
+}
+
+.footer .socialIcons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    justify-items: center;
+    /* kapladığı alanı ortla*/
+}
+
+.navBtn {
+    display: none;
+}
+.closeBtn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 40px;
+}
+
+.sideBar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: gray;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+}
+.showSideBar{
+    transform: translateX(0);
+ }
+ .closeNavBar{
+    display: none;
+ }
+
+.sideBarLinks a{
+    color: white;
+    font-size: 32px;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+@media screen and (max-width:768px) {
+
+    .bannerImg,
+    .bannerFoto {
+        display: none;
+    }
+
+    .blogCenter {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .blogCenter,
+    .bannerDiv,
+    .aboutCenter,
+    .services,
+    .skillsCenter {
+        grid-template-columns: 1fr;
+        padding: 0px 20px;
+
+    }
+
+    .service {
+        margin-top: 20px;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .projects {
+        grid-template-areas:
+            'a'
+            'b'
+            'c'
+            'd';
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .projectsTitle {
+        padding: 20px;
+        margin-bottom: 30;
+    }
+
+
+    .bannerInfo .underLine {
+        margin: 5px auto;
+        margin-bottom: 25px;
+    }
+
+    .navCenter {
+        grid-template-columns: 1fr;
+        padding: 0px 30px;
+    }
+
+    .navDiv {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .navBtn {
+        font-size: 40px;
+        display: grid;
+        justify-self: end;
+        color: darkmagenta;
+        border: none;
+        background-color: transparent;
+    }
+
+    .nav{
+        position: fixed;
+        width: 100%;
+        
+        background-color: white;
+    }
+}

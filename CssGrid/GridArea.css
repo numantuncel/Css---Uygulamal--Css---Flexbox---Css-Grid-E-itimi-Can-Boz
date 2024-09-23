@@ -1,0 +1,34 @@
+.container{
+    height: 700px;
+    width: 700px;
+    margin: 200px auto;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template: 1fr 1fr / repeat(4,1fr);
+   /*  column-gap: 20px;
+    row-gap: 10px; */
+   /*  gap: 10px 20px;/* kısa yazım tarzı*/ 
+}
+.box{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.aliginnew{
+    grid-column-start: 1;/*ikide başlar 3 de biter*/
+    grid-column-end: span 3;/* üç birim uzar uzama hep sağadır*/
+    grid-row-start: 2;
+    grid-row-end:3 ;
+}
+.second{
+/*     grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end:3 ; */
+
+    grid-area: 2 / 4 / 3 / 5;
+
+
+    /* row start , columun  start / row end , columun end sıralaması */
+}

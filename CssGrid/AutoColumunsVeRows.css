@@ -1,0 +1,21 @@
+.container {
+
+    width: 800px;
+    margin: 200px auto;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template: repeat(2, 200px) / repeat(4, 200px);
+    /* yeni aşağı iki satır eklendiğinde colon değerlerini alır fakat ikili olduğu için satır değerlerini almaz  / aynı şekilde yana eklenirse olur */
+    /* grid-auto-rows:200px ; yeni gelen satır oto matik 200px */
+
+    /* satırdan değil kolondan doldurmaya başlar*/
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;
+}
+
+.box {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBar {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 16px 32px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+.navDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navLinks {
+    display: flex;
+}
+
+.navLink {
+    padding: 16px 32px;
+    display: block;
+    /*inline yazınının kapladığı yer block elementin kapladığı yer*/
+    letter-spacing: 1px;
+    color: gray;
+    transition: all 0.2s linear;
+
+}
+
+.navLink:hover {
+    color: cornflowerblue;
+}
+
+
+
+
+.navIcons {
+    display: flex;
+
+
+}
+
+.navIcon {
+    margin-right: 12px;
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.navLogo {
+    width: 50px;
+
+}
+
+.bannerSection {
+    background-image: url('main.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerDiv {
+    color: tomato;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+
+}
+
+.bannerDiv h1 {
+    text-transform: uppercase;
+}
+
+.btn {
+    background: cornflowerblue;
+    padding: 6px 12px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.2s linear;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    background: white;
+    color: cornflowerblue;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+.bannerBtnDiv {
+    margin-top: 30px;
+}
+
+.bannerBtn {
+    background-color: white;
+    color: tomato;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.bannerBtn:hover {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.aboutSection {
+    padding: 50px 0px;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 100px;
+
+}
+
+.aboutPhoto {
+    width: 100%;
+    position: relative;
+    /*bağımısız konumlandırma /// ya da z inde kullanıllabilir*/
+}
+
+.aboutİmg {
+    width: 50%;
+    position: relative;
+
+}
+
+.aboutİmg::before {
+    content: '';
+    /*içerik verilmek zorunda*/
+    position: absolute;
+    border: 8px solid cornflowerblue;
+    width: 100%;
+    height: 100%;
+    top: -25px;
+    left: -25px;
+    box-sizing: border-box;
+    /*eğer yapmazsak içeriye padding ve borderi de ekler*/
+
+}
+
+.aboutInfo {
+    width: 40%;
+}
+
+.aboutTitle {
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+.btnDiv {
+    margin-top: 20px;
+}
+
+/*a display inline olduğu için kaymaz kapsayıcı div kayar*/
+
+.servicesContainer {
+    background-color: mediumorchid;
+    padding: 50px 20px;
+}
+
+.servicesTitle {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.services {
+    display: flex;
+}
+
+.service {
+    display: flex;
+}
+
+.serviceIcon {
+    font-size: 32px;
+    padding: 8px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    color: white;
+    align-self: start;
+    /*uzun arka plan rengini uçurur.*/
+    /*     Dikey eksende öğelerin nasıl hizalanacağı belirlenir. Tek farkı kapsayıcı yerine bunu öğelere uygulamasıdır.
+ */
+}
+
+.serviceInfo {
+    padding-left: 16px;
+}
+
+.serviceTitle {
+    margin-bottom: 10px;
+}
+
+.turCard {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 400px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    transition: all 0.2s linear;
+
+
+}
+
+.turCard:hover {
+    transform: scale(1.03);
+}
+
+.turImg {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.turImgContainer {
+    position: relative;
+}
+
+.turDate {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 4px 8px;
+    margin-bottom: 4px;
+    border-radius: 15px 0px 0px 0px;
+}
+
+.turFooter {
+    display: flex;
+    justify-content: space-between;
+    color: cornflowerblue;
+
+}
+
+.turİnfo {
+    padding: 20px 25px;
+}
+
+.turTitle h4,
+p {
+    margin-bottom: 12px;
+    line-height: 1.25;
+}
+
+.turTitle p {
+    color: gray;
+}
+
+.turCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 50px;
+}
+
+.turMainTitle {
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.tourSection {
+    padding: 50px 0px;
+}
+
+.turBtn {
+    text-align: center;
+}
+
+.galleries {
+    display: flex;
+    flex-wrap: wrap;
+    /*width e göre hareket eder */
+}
+
+.galleryImgContainer {
+    width: 25%;
+    height: 250px;
+    position: relative;
+
+}
+
+.galleryIcon {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*kendisinin yarısı kadar x ekseninde ve y eksinde*/
+    font-size: 32px;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.galleryImgContainer:hover .galleryIcon {
+    /*hover olduğunda gallery icon etkilenecek*/
+    opacity: 1;
+}
+
+.galleryImgContainer:hover .galleryImg {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.galleryImg {
+    width: 100%;
+    height: 100%;
+}
+
+.contactSection {
+    padding: 50px 0px;
+    background-color: cornflowerblue;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactTitle {
+    color: white;
+}
+
+.form-Control {
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    color: cornflowerblue;
+    outline: none;
+    /*textbox a girince border çıkmasını engeller*/
+    min-width: 400px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btnSubmit {
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    color: cornflowerblue;
+    margin-left: 8px;
+    transition: all 0.2s linear;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.form-Control::placeholder {
+    color: cornflowerblue;
+}
+
+.btnSubmit:hover {
+    color: pink;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 50px 0px;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.footerLink {
+    color: white;
+    margin-right: 16px;
+    letter-spacing: 2px;
+    transition: all 0.2s linear;
+}
+
+.footerLink:hover {
+    color: cornflowerblue;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerIcon {
+    color: cornflowerblue;
+    margin-right: 16px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.company {
+
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.navToggle {
+
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .navDiv{
+        display: block;
+    }
+    .navLinks {
+        display: none;
+    }
+    .navLink:hover{
+        background-color: blueviolet;
+        color: white;
+    }
+
+    .navIcons {
+        display: none;
+    }
+    .navToggle{
+        display: block;
+        font-size: 30px;
+        color: cornflowerblue;
+        border: none;
+        background-color: white;
+
+    }
+    .navToggle:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    .navHeader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .services{
+        flex-direction: column;
+    }
+    .contactContainer{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .form-Control{
+        min-width: 100%;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .btnSubmit{
+        width: 30%;
+    }
+    .contactForm{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    .footerLinks{
+        flex-direction: column;
+    }
+    .bannerBtn{
+        padding: 15px 10px;
+        font-size: 18px;
+    }
+    .aboutContainer{
+        flex-direction: column;
+        margin: 0;
+        padding: 30px;
+    }
+    .aboutİmg{
+        width: 100%;
+    }
+    .aboutInfo{
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    .service{
+        margin-bottom: 15px;
+    }
+    .serviceIcon{
+        display: flex;
+        min-width: 60px;
+        justify-content: center;
+    }
+    .btnDiv{
+        text-align: center;
+    }
+    .turCard{
+        width: 100%;
+    }
+    .turCards{
+        margin: 10px;
+    }
+    .galleryImgContainer{
+        width: 100%;
+    }
+    .footer{
+        padding: 100px 0px;
+    }
+    .footerLinks li{
+        padding: 10px 0px;
+    }
+}
+.showLinks{
+    display: block !important;
+    height: 250px;
+}

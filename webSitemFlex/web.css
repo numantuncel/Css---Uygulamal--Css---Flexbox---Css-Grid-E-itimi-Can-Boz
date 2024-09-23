@@ -1,0 +1,139 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: wheat;
+    height: 80px;
+    padding: 0px 15px;
+}
+
+.headerLink {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.bannerDiv {
+    background-image: url('burgerlogo.png');
+    height: 400px;
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+}
+
+.imgDiv {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-right: 50px;
+}
+
+.imgDiv .efso {
+    width: 100%;
+    /*fotoğraf dive sığar*/
+    border-radius: 30px 30px 0px 0px;
+}
+
+.imgDiv h3 {
+    text-align: center;
+}
+
+.imgDiv p {
+    padding: 20px 20px;
+}
+
+.card {
+
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    position: relative;
+    right: 0;
+    left: 25px;
+}
+
+select option {
+    color: black;
+}
+
+.formElement {
+    width: 100%;
+    padding: 13px 0px;
+    border: 1px solid red;
+    border-radius: 10px;
+
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+
+.btnSubmit {
+    width: 100%;
+    padding: 13px 0px;
+    background-color: rgb(144, 238, 144);
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+
+form {
+    background-color: lightgray;
+    margin: 83px 0px;
+    padding: 20px;
+
+}
+
+.footer {
+    background-color: chocolate;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobilIcon {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        flex-direction: column;
+
+    }
+
+    .card .imgDiv {
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    .mobilLinkDisplay {
+        display: none;
+    }
+
+    .mobilLink {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .headerİmg {
+        display: none;
+    }
+
+    .mobilIcon {
+        display: block;
+    }
+}

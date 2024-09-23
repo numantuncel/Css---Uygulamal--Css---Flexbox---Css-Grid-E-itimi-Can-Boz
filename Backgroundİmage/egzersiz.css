@@ -1,0 +1,17 @@
+.box1 {
+  width: 500px;
+  height: 500px;
+  border: 2px solid red;
+  background-image: url("cupra.jpg");
+  background-position: right;
+  background-size: cover;
+}
+.box2 {
+  width: 300px;
+  height: 500px;
+  border: 2px solid red;
+  background-image: url("images.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,15 @@
+.box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  background-image: url("images.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* position ile resmin istediğimiz yerine ulaşabilriz*/
+
+/*repeat x x de devam et y de y de devam et */
+/*  size-contain ile sığdırmaya çalışır*/
+/* cover le tam kaplamaya çalışır */
