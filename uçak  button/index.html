@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Sign In/Sign Up Buttons</title>
+    <style>
+      /* Center buttons on the page */
+      body {
+        margin: 0;
+      }
+      .logo {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin: 0;
+        background: linear-gradient(
+          135deg,
+          #a1c4fd,
+          #c2e9fb
+        ); /* Soft gradient background */
+        font-family: "Arial", sans-serif;
+      }
+
+      /* Container for side-by-side buttons */
+      .button-container {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px; /* Rounded corners for the button container */
+      }
+
+      /* Styling for each button */
+      .btn {
+        width: 110px;
+        position: relative;
+        flex: 1;
+        padding: 15px 30px;
+        font-size: 13px;
+        font-weight: 550;
+        color: #fff;
+        background: linear-gradient(
+          45deg,
+          #6b8cff,
+          #7ac3ff
+        ); /* Gradient button background */
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        border-radius: 10px; /* Rounded corners for buttons */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        position: relative; /* Position for the airplane animation */
+      }
+
+      /* Airplane icon styling */
+      .airplane-icon {
+        position: absolute;
+        top: 50%;
+        left: -40px; /* Start off-screen */
+        transform: translateY(-50%) rotate(-30deg);
+        font-size: 24px;
+        transition: left 0.5s ease, transform 0.5s ease;
+      }
+
+      /* Trail effect for airplane */
+      .airplane-trail {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: rgba(255, 255, 255, 0.3);
+        top: 50%;
+        left: -100%;
+        transition: left 0.5s ease;
+        z-index: -1; /* Behind the buttons */
+      }
+
+      /* Hover effect for both buttons */
+      .btn:hover {
+        background: linear-gradient(
+          45deg,
+          #7ac3ff,
+          #6b8cff
+        ); /* Reverse gradient on hover */
+        box-shadow: 0 0 25px rgba(0, 122, 255, 0.5);
+      }
+
+      /* Airplane animation on hover */
+      .btn:hover ~ .airplane-icon {
+        left: calc(100% + 10px); /* Move airplane across both buttons */
+        transform: translateY(-50%) rotate(30deg); /* Face right */
+      }
+
+      /* Show trail on hover */
+      .btn:hover ~ .airplane-trail {
+        left: 0;
+      }
+
+      /* Labels for each button */
+      .btn.sign-in::before {
+        content: "Sign In";
+      }
+
+      .btn.sign-up::before {
+        content: "Sign Up";
+      }
+
+      /* Adjust spacing between buttons */
+      .btn:not(:last-child) {
+        border-right: 2px solid rgba(255, 255, 255, 0.3); /* Divider between buttons */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <div class="button-container">
+        <!-- Sign In Button -->
+        <button class="btnnn sign-in">
+          <div class="airplane-trail"></div>
+          <span class="airplane-icon">✈️</span>
+        </button>
+
+        <!-- Sign Up Button -->
+        <button class="btnnn sign-up">
+          <div class="airplane-trail"></div>
+          <span class="airplane-icon"></span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

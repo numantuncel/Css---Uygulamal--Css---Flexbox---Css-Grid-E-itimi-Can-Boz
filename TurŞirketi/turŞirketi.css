@@ -3,7 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#home{
+    height: 100vh;
+}
+.header{
+    height: 11%;
+}
+.bannerSection {
+    background-image: url('uçakarkaplan01.png');
+    height: 89%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .navBar {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 16px 32px;
@@ -11,6 +25,7 @@
     width: 100%;
     background-color: white;
     z-index: 2;
+    
 }
 
 .navDiv {
@@ -22,6 +37,7 @@
 
 .navLinks {
     display: flex;
+    margin: 0px 20px;
 }
 
 .navLink {
@@ -67,15 +83,7 @@ a {
 
 }
 
-.bannerSection {
-    background-image: url('main.jpg');
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .bannerDiv {
     color: tomato;
@@ -110,6 +118,9 @@ a {
 
 .bannerBtnDiv {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bannerBtn {
@@ -126,7 +137,10 @@ a {
     color: white;
     border-color: white;
 }
-
+.flightTitle{
+    color: black;
+   margin-top: 25px;
+}
 .aboutSection {
     padding: 50px 0px;
 }
