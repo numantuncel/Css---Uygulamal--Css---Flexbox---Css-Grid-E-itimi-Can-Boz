@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yolcu Bilgileri</title>
+
+    <link rel="stylesheet" href="yolcubilgi.css">
+<!-- jQuery kütüphanesi -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- DateTimePicker CSS ve JS dosyaları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+
+  </head>
+  <body>
+    <div class="nav">
+      <div class="navDiv">
+        <ul class="navUl">
+          <li>Yer Durumu<i class="fa-solid fa-plane"></i></li>
+          <li class="yolcuBilgileri">Yolcu Bilgileri<i class="fa-solid fa-plane"></i></li>
+          <li>Koltuk Seçimi<i class="fa-solid fa-plane"></i></li>
+          <li>Ödeme</li>
+        </ul>
+      </div>
+      <div class="durumİşaret"></div>
+    </div>
+    <div class="container">
+        <div class="shipping-form">
+          <form>
+            <input type="text" id="full-name" placeholder="Ad" required>
+            <input type="text" id="full-name" placeholder="Soyad" required>
+            <input type="text" id="phone-number" placeholder="Telefon Numarası">
+            <input type="text" id="tc-number" placeholder="TC Kimlik Numarası">
+            <div class="dateDiv">
+              
+                <input type="text" id="datetimepicker" placeholder="Doğum Tarihi">
+            </div>
+            
+            <div class="Cinsiyet">
+                <span>Cinsiyet:</span>
+                <div class="cinsiyetDurum">
+                    <label>
+                        <span>Erkek</span>
+                        <input type="radio" id="package-weight" name="gender">
+                    </label>
+                    <label>
+                        <span>Kadın</span> 
+                        <input type="radio" id="package-weight" name="gender">
+                    </label> 
+                </div>
+            </div>
+            <div class="butonDiv">
+                <a type="button" id="btn" value="Submit">Devam Et</a>
+            </div>
+            
+          </form>
+        </div>
+        <div class="shipping-result">
+          <h1>Yolcu Bilgileri</h1>
+          <div id="output-data"></div>
+        </div>
+      </div>
+
+    <script
+      src="https://kit.fontawesome.com/e9a187851c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="yolcubilgi.js"></script>
+  </body>
+</html>

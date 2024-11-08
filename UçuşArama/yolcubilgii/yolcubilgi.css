@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.nav{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid
+    rgb(72, 188, 255) ;
+    border-bottom: 4px solid
+    rgb(72, 188, 255) ;
+}
+
+
+.navUl{
+    display: flex;
+    
+    list-style-type: none;
+    
+}
+li{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 0px 20px;
+    text-align: center;
+    padding: 15px;
+   
+}
+.yolcuBilgileri{
+    background-color: rgb(72, 188, 255) ;
+}
+.yolcuBilgileri i{
+    color: white;
+}
+
+li:last-child{
+    border: none;
+}
+i{
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+    margin-left: 20px;
+}
+.container{
+    /* height:100vh; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+  .shipping-form{
+    width:500px;
+    background-color:#fff;
+    padding:50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius:10px;
+  }
+  form input:not(:last-child){
+    height:40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width:100%;
+    font-size:16px;
+  }
+  .Cinsiyet{
+    height:40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color:#999999;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width:100%;
+    font-size:16px;
+    display: flex;
+    
+  }
+  .cinsiyetDurum{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  form input::placeholder{
+    font-size:14px;
+    color:#999999;
+  }
+  form input:focus {
+    border: 2px solid rgb(72, 188, 255) ;
+    outline:none;
+  }
+  #btn{
+    background-color:white;
+    border:none;
+    outline:none;
+    font-size:16px;
+    color:#000000;
+    padding:12px 16px;
+    border-radius:5px;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgb(72, 188, 255);
+  }
+
+  .shipping-result{
+    width:500px;
+    text-align:center;
+    background-color: rgb(72, 188, 255) ;
+  /*   background-color:#4942E4; */
+    padding:20px;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .shipping-result h1{
+    margin-bottom:20px;
+  }
+  .customer-data{
+    padding:10px;
+  }
+  .butonDiv{
+    margin-top: 20px;
+    width: 100%;
+    text-align: right;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .dateDiv{
+    height:40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color:#999999;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width:100%;
+    font-size:16px;
+    display: flex;
+    
+  }
+  .dateDiv input{
+
+
+    border: none !important;
+    color: #999999;
+    outline: none !important;
+    cursor: pointer;
+  }
